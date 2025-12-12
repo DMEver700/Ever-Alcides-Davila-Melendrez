@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --color-quantum-dark: #0D1B2A;  
+  --color-quantum-medium: #1B263B;  
+  --color-quantum-accent: #56CFE1;  
+  --color-quantum-accent-hover: #72EFDD;
+  --color-quantum-text-light: #E0E1DD;
+  --color-quantum-text-dim: #A0AEC0;  
+}
+
+@layer components {
+  /* --- PUNTO 5: SIMPLIFICACIÓN CON @APPLY --- */
+
+  /* Estilo base para todos los inputs del formulario */
+  .input-quantum {
+    @apply w-full px-5 py-4 rounded-lg bg-quantum-dark border border-quantum-dark text-quantum-text-light outline-none transition-all;
+    @apply focus:border-quantum-accent focus:ring-1 focus:ring-quantum-accent placeholder:text-gray-600;
+  }
+
+  /* Botón Principal (Llamado a la acción) */
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg bg-quantum-accent text-quantum-dark font-bold text-center transition-all duration-300 cursor-pointer;
+    @apply hover:bg-quantum-accent-hover active:bg-quantum-medium hover:shadow-lg hover:shadow-quantum-accent/20;
+  }
+
+  /* Botón Secundario (Bordes) */
+  .btn-outline {
+    @apply px-6 py-3 rounded-lg border border-quantum-text-dim text-quantum-text-dim text-center font-bold transition-all duration-300 cursor-pointer;
+    @apply hover:text-white hover:border-white hover:bg-white/5;
+  }
+
+  /* Enlaces de navegación desktop */
+  .nav-link-desktop {
+    @apply flex items-center hover:text-white transition-colors cursor-pointer h-full;
+  }
+
+  /* Enlaces de navegación móvil */
+  .nav-link-mobile {
+    @apply block px-4 py-3 text-lg border-b border-white/5 hover:bg-white/5 hover:text-quantum-accent transition-colors;
+  }
+  
+  /* Tarjetas de Beneficios */
+  .card-benefit {
+    @apply bg-quantum-medium p-8 rounded-lg shadow-xl border-t-4 border-quantum-accent hover:-translate-y-2 transition-transform duration-300;
+  }
+}

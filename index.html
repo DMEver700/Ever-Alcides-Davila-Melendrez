@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Configuración del documento HTML -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad del Pacífico | Lidera el Cambio</title>
+    <link rel="stylesheet" href="./src/output.css"> <!-- Enlace a la hoja de estilos de Tailwind CSS -->
+    </head>
+<body class="font-inter bg-quantum-dark antialiased"> <!-- Barra superior informativa -->
+
+  <div class="bg-quantum-dark text-quantum-text-dim py-2 text-xs md:text-sm border-b border-quantum-medium hidden sm:block">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <div class="flex items-center gap-2">
+        <span class="font-semibold text-quantum-accent">Proceso de Admisión 2026:</span> Abierto. Postula ahora.
+      </div>
+      <div class="flex gap-x-4 items-center">
+    <a href="plataforma.html" class="hover:text-white transition-colors">Plataforma Virtual</a>
+    <a href="contacto.html" class="hover:text-white transition-colors">Contacto</a>
+</div>
+    </div>      
+  </div>
+<!-- Navegación principal -->
+  <nav class="shadow-md bg-quantum-dark text-quantum-text-light sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center h-20">
+         <!-- Logo de la universidad -->
+        <a href="index.html" class="flex-shrink-0">
+          <img src="https://sisisemail.up.edu.pe/sisisemail/_data/2021/2052/UniversidadDelPacifico/UniversidadDelPacifico.jpg" alt="Logo UP" class="h-16 w-auto bg-white p-1 rounded">
+        </a>
+        <!-- Navegación para escritorio (pc) -->
+        <div class="hidden md:flex items-center gap-x-8 h-full">
+          
+          <div class="group relative h-full flex items-center">
+            <div class="nav-link-desktop">
+              <!-- Menú desplegable: Sobre Nosotros -->
+              <span class="mr-1">Sobre Nosotros</span>
+              <!-- Ícono de flecha-->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-3 group-hover:rotate-180 transition-transform"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+            </div>
+             <!-- Submenú desplegable -->
+            <div class="absolute top-full left-0 w-56 bg-quantum-medium border-t-2 border-quantum-accent shadow-xl rounded-b-lg invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-50">
+              <ul class="py-2 text-sm">
+                <li><a href="historia.html" class="block px-6 py-3 hover:bg-quantum-accent/10 hover:text-quantum-accent">Historia</a></li>
+                <li><a href="mision-vision.html" class="block px-6 py-3 hover:bg-quantum-accent/10 hover:text-quantum-accent">Misión y Visión</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Menú desplegable: Carreras -->
+          <div class="group relative h-full flex items-center">
+            <div class="nav-link-desktop">
+              <span class="mr-1">Carreras</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-3 group-hover:rotate-180 transition-transform"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+            </div>
+            <div class="absolute top-full left-0 w-72 bg-quantum-medium border-t-2 border-quantum-accent shadow-xl rounded-b-lg invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-50">
+                <ul class="py-2 text-sm max-h-[400px] overflow-y-auto custom-scrollbar">
+                  <!-- Lista de carreras con enlaces -->
+                    <li><a href="carrera-humanidades.html" class="block px-6 py-2 hover:bg-quantum-accent/10 hover:text-quantum-accent">Humanidades Digitales</a></li>
+                    <li><a href="carrera-innovacion.html" class="block px-6 py-2 hover:bg-quantum-accent/10 hover:text-quantum-accent">Ingeniería en Innovación y Diseño</a></li>
+                    <li><a href="carrera-politica.html" class="block px-6 py-2 hover:bg-quantum-accent/10 hover:text-quantum-accent">Política, Filosofía y Economía</a></li>
+                    <li><a href="carrera-administracion.html" class="block px-6 py-2 hover:bg-quantum-accent/10 hover:text-quantum-accent">Administración</a></li>
+                    <li><a href="carrera-contabilidad.html" class="block px-6 py-2 hover:bg-quantum-accent/10 hover:text-quantum-accent">Contabilidad</a></li>
+                    <li><a href="carrera-derecho.html" class="block px-6 py-2 hover:bg-quantum-accent/10 hover:text-quantum-accent">Derecho</a></li>
+                    <li><a href="carrera-economia.html" class="block px-6 py-2 hover:bg-quantum-accent/10 hover:text-quantum-accent">Economía</a></li>
+                    <li><a href="carrera-finanzas.html" class="block px-6 py-2 hover:bg-quantum-accent/10 hover:text-quantum-accent">Finanzas</a></li>
+                    <li><a href="carrera-ing-empresarial.html" class="block px-6 py-2 hover:bg-quantum-accent/10 hover:text-quantum-accent">Ingeniería Empresarial</a></li>
+                    <li><a href="carrera-ing-informacion.html" class="block px-6 py-2 hover:bg-quantum-accent/10 hover:text-quantum-accent">Ing de la Información</a></li>
+                    <li><a href="carrera-marketing.html" class="block px-6 py-2 hover:bg-quantum-accent/10 hover:text-quantum-accent">Marketing</a></li>
+                    <li><a href="carrera-negocios.html" class="block px-6 py-2 hover:bg-quantum-accent/10 hover:text-quantum-accent">Negocios Internacionales</a></li>
+                  </ul>
+            </div>
+          </div>
+          <!-- Enlace directo a Admisión -->
+          <a href="admision.html" class="nav-link-desktop">Admisión</a>
+          <!-- Menú desplegable: Servicios -->
+          <div class="group relative h-full flex items-center">
+            <div class="nav-link-desktop">
+              <span class="mr-1">Servicios</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-3 group-hover:rotate-180 transition-transform"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+            </div>
+            <div class="absolute top-full left-0 w-56 bg-quantum-medium border-t-2 border-quantum-accent shadow-xl rounded-b-lg invisible opacity-0 translate-y-2 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-50">
+              <ul class="py-2 text-sm">
+                <li><a href="biblioteca.html" class="block px-6 py-3 hover:bg-quantum-accent/10 hover:text-quantum-accent">Biblioteca</a></li>
+                <li><a href="bolsa-trabajo.html" class="block px-6 py-3 hover:bg-quantum-accent/10 hover:text-quantum-accent">Bolsa de Trabajo</a></li>
+                <li><a href="centro-idiomas.html" class="block px-6 py-3 hover:bg-quantum-accent/10 hover:text-quantum-accent">Centro de Idiomas</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <!-- Botones de acción -->
+        <div class="hidden md:flex gap-x-4">
+          <a href="plataforma.html" class="btn-outline py-2 px-4 text-sm">Portal Alumno</a>
+          <a href="admision.html" class="btn-primary py-2 px-4 text-sm">Postula Ahora</a>
+        </div>
+        <!-- Botón para menú móvil (móvil) -->
+        <button id="mobile-menu-btn" class="md:hidden text-quantum-text-light focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+
+      </div>
+    </div>
+    <!-- Menú móvil (oculto) -->
+    <div id="mobile-menu" class="hidden md:hidden bg-quantum-medium border-t border-quantum-accent/30 shadow-2xl h-[calc(100vh-80px)] overflow-y-auto">
+      <div class="flex flex-col p-6 space-y-6 pb-20">
+        <!-- Enlace de inicio -->
+        <a href="index.html" class="text-white font-bold text-lg border-b border-white/10 pb-3">Inicio</a>
+        <!-- Sección: Sobre Nosotros (móvil) -->
+        <div>
+            <div class="text-quantum-accent text-xs font-bold uppercase tracking-widest mb-3">Sobre Nosotros</div>
+            <div class="flex flex-col space-y-3 pl-4 border-l border-white/10">
+                <a href="historia.html" class="text-gray-300 hover:text-white text-sm">Historia</a>
+                <a href="mision-vision.html" class="text-gray-300 hover:text-white text-sm">Misión y Visión</a>
+            </div>
+        </div>
+        <!-- Sección: Carreras (móvil) -->
+        <div>
+    <div class="text-quantum-accent text-xs font-bold uppercase tracking-widest mb-3">Carreras</div>
+    <div class="flex flex-col space-y-3 pl-4 border-l border-white/10">
+        <!-- Lista de carreras para móvil -->
+        <a href="carrera-humanidades.html" class="text-gray-300 hover:text-white text-sm">Humanidades Digitales</a>
+        <a href="carrera-innovacion.html" class="text-gray-300 hover:text-white text-sm">Ing. Innovación y Diseño</a>
+        <a href="carrera-politica.html" class="text-gray-300 hover:text-white text-sm">Política, Filosofía y Eco.</a>
+        <a href="carrera-administracion.html" class="text-gray-300 hover:text-white text-sm">Administración</a>
+        <a href="carrera-contabilidad.html" class="text-gray-300 hover:text-white text-sm">Contabilidad</a>
+        <a href="carrera-derecho.html" class="text-gray-300 hover:text-white text-sm">Derecho</a>
+        <a href="carrera-economia.html" class="text-gray-300 hover:text-white text-sm">Economía</a>
+        <a href="carrera-finanzas.html" class="text-gray-300 hover:text-white text-sm">Finanzas</a>
+        <a href="carrera-ing-empresarial.html" class="text-gray-300 hover:text-white text-sm">Ingeniería Empresarial</a>
+        <a href="carrera-ing-informacion.html" class="text-gray-300 hover:text-white text-sm">Ing. de la Información</a>
+        <a href="carrera-marketing.html" class="text-gray-300 hover:text-white text-sm">Marketing</a>
+        <a href="carrera-negocios.html" class="text-gray-300 hover:text-white text-sm">Negocios Internacionales</a>
+        <!-- Enlace a Admisión movil -->
+        <div class="pt-2 border-t border-white/10">
+            <a href="admision.html" class="text-quantum-accent font-bold text-sm">Admisión</a>
+        </div>
+    </div>
+</div>
+        <!-- Sección: Servicios (móvil) -->
+        <div>
+            <div class="text-quantum-accent text-xs font-bold uppercase tracking-widest mb-3">Servicios</div>
+            <div class="flex flex-col space-y-3 pl-4 border-l border-white/10">
+                <a href="biblioteca.html" class="text-gray-300 hover:text-white text-sm">Biblioteca</a>
+                <a href="bolsa-trabajo.html" class="text-gray-300 hover:text-white text-sm">Bolsa de Trabajo</a>
+                <a href="centro-idiomas.html" class="text-gray-300 hover:text-white text-sm">Centro de Idiomas</a>
+            </div>
+        </div>
+        <!-- Botones de acción para (móvil) -->
+        <div class="flex flex-col gap-3 pt-4 border-t border-white/10 mt-4">
+          <a href="plataforma.html" class="btn-outline w-full text-center py-3">Portal Alumno</a>
+          <a href="admision.html" class="btn-primary w-full text-center py-3 shadow-lg">Postula Ahora</a>
+        </div>
+
+      </div>
+    </div>
+</nav>
+  <!-- Encabezado principal con formulario preinscripción -->
+  <header class="pb-16 pt-10 md:pt-16 text-quantum-text-light relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-quantum-accent/5 blur-[120px] rounded-full pointer-events-none"></div><!-- Efecto -->
+
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+      
+      <div class="w-full md:w-1/2 text-center md:text-left z-10">
+        <h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-white leading-tight">
+          Lidera el cambio.
+          <span class="text-quantum-accent block mt-2">Transforma el futuro.</span>
+        </h1>
+        <p class="mt-6 font-medium text-lg md:text-xl text-quantum-text-dim max-w-lg mx-auto md:mx-0">
+          Somos la universidad líder en economía, finanzas y negocios. Prepárate para un mundo globalizado con una formación de excelencia.
+        </p>
+        <!-- Botones -->
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="#" class="btn-primary">Conoce las Carreras</a>  
+          <a href="#" class="btn-outline">Instalaciones</a>
+        </div>
+      </div>
+      <!-- Formulario -->
+      <div class="w-full md:w-1/2 z-10">
+        <div class="bg-quantum-medium p-8 rounded-2xl shadow-2xl border border-white/5">
+          <div class="mb-6">
+            <h2 class="font-bold text-2xl text-white">Formulario de Preinscripción 2026</h2>
+            <p class="text-quantum-text-dim text-sm mt-1">¡Únete a la comunidad de líderes!</p>
+          </div>
+          <!-- Campos del formulario -->
+          <form action="#" class="space-y-4">
+            <input class="input-quantum" type="text" placeholder="Nombres y Apellidos" required>
+            <input class="input-quantum" type="email" placeholder="Correo electrónico" required>
+            <input class="input-quantum" type="tel" placeholder="Número de celular">
+            <!-- carreras formulario -->
+            <div class="relative">
+              <select class="input-quantum appearance-none cursor-pointer">
+                <option value="" disabled selected>Seleccionar carrera de interés</option>
+                <option value="economia">Economía</option>
+                <option value="administracion">Administración</option>
+                <option value="ing-empresarial">Ingeniería Empresarial</option>
+                <option value="derecho">Derecho</option>
+              </select>
+              <!-- Ícono -->
+              <div class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-quantum-text-dim">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-primary w-full shadow-lg shadow-quantum-accent/20">
+              Enviar Preinscripción
+            </button>
+            
+            <div class="text-center text-quantum-text-dim text-xs mt-3">
+              Al enviar aceptas nuestros <a href="#" class="underline hover:text-quantum-accent">Términos y Condiciones</a>.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Sección de estadísticas -->
+  <div class="bg-quantum-medium py-16 border-y border-white/5">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <!-- Estadística: Ranking -->
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 text-quantum-accent">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
+          </svg>
+          <div>
+            <div class="text-4xl font-bold text-quantum-accent">#1</div>
+            <div class="text-quantum-text-dim text-lg">En Economía y Negocios.</div>
+          </div>          
+        </div>
+        <!-- Estadística: Convenios -->
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4 border-t md:border-t-0 md:border-l border-white/10 pt-8 md:pt-0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 text-quantum-accent">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m6.115 5.19.319 1.913A6 6 0 0 0 8.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 0 0 2.288-4.042 1.087 1.087 0 0 0-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 0 1-.98-.314l-.295-.295a1.125 1.125 0 0 1 0-1.591l.13-.132a1.125 1.125 0 0 1 1.3-.21l.603.302a.809.809 0 0 0 1.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 0 0 1.528-1.732l.146-.292M6.115 5.19A9 9 0 1 0 17.18 4.64M6.115 5.19A8.965 8.965 0 0 1 12 3c1.929 0 3.716.607 5.18 1.64" />
+          </svg>
+          <div>
+            <div class="text-4xl font-bold text-quantum-accent">+50</div>
+            <div class="text-quantum-text-dim text-lg">Convenios Internacionales.</div>
+          </div>          
+        </div>
+        <!-- Estadística: Egresados -->
+        <div class="flex flex-col md:flex-row items-center justify-center gap-4 border-t md:border-t-0 md:border-l border-white/10 pt-8 md:pt-0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-16 text-quantum-accent">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+          </svg>
+          <div>
+            <div class="text-4xl font-bold text-quantum-accent">+20 mil</div>
+            <div class="text-quantum-text-dim text-lg">Egresados Exitosos.</div>
+          </div>          
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- video institucional -->
+  <div class="bg-quantum-dark py-24">
+    <div class="container mx-auto px-4">
+      <div class="bg-quantum-medium rounded-2xl p-8 md:p-12 shadow-2xl border border-white/5 flex flex-col md:flex-row items-center gap-12">
+        
+        <div class="w-full md:w-5/12 space-y-6">
+          <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight">
+            Descubre tu <span class="text-quantum-accent">Potencial</span> Real
+          </h2>
+          <p class="text-quantum-text-dim leading-relaxed">
+            Sumérgete en la vida universitaria. Conoce nuestras instalaciones de vanguardia diseñadas para fomentar la innovación y escucha de 
+            primera mano cómo nuestros estudiantes viven la excelencia académica día a día.
+          </p>
+          <p class="text-quantum-text-dim leading-relaxed">
+            Entérate de cómo nuestra formación rigurosa, combinada con una visión global y ética, está transformando el futuro profesional de 
+            nuestros egresados en líderes del mercado.
+          </p>
+          <button class="btn-outline group">
+            Ver vida universitaria
+            <span class="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
+          </button>
+        </div>
+        <!-- Video YouTube -->
+        <div class="w-full md:w-7/12">
+          <div class="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border border-white/10 group">
+            <iframe 
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/15OjChRkxp0?autoplay=1&mute=1&controls=0&disablekb=1&rel=0&loop=1&playlist=15OjChRkxp0&modestbranding=1" 
+              title="Video Institucional UP" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+            <div class="absolute inset-0 bg-transparent md:block hidden"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<!-- Carreras destacadas -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <!-- Economía -->
+    <a href="carrera-economia.html" class="block h-full rounded-2xl overflow-hidden shadow-xl border border-white/5 hover:border-quantum-accent/50 transition-all duration-300">
+        <div class="relative h-64">
+            <img class="w-full h-full object-cover" src="https://pamer.edu.pe/academias/wp-content/uploads/sites/3/2022/11/02-1-1024x683.jpg" alt="Economía">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        <div class="p-6 bg-quantum-medium">
+            <h3 class="text-2xl font-bold text-white mb-2">Economía</h3>
+            <p class="text-quantum-text-dim text-sm line-clamp-2 mb-4">
+                Analiza mercados y diseña políticas públicas con el mayor rigor analítico del país.
+            </p>
+            <span class="inline-block px-4 py-1.5 bg-quantum-accent text-quantum-dark font-bold rounded-lg text-sm transition-colors hover:bg-quantum-accent-hover">
+                Ver Malla
+            </span>
+        </div>
+    </a>
+    <!-- Administración -->
+    <a href="carrera-administracion.html" class="block h-full rounded-2xl overflow-hidden shadow-xl border border-white/5 hover:border-quantum-accent/50 transition-all duration-300"> 
+        <div class="relative h-64">
+            <img class="w-full h-full object-cover" src="https://adex.edu.pe/wp-content/uploads/2024/07/Donde-estudiar-Administracion-de-Empresas.jpg" alt="Administración">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        <div class="p-6 bg-quantum-medium">
+            <h3 class="text-2xl font-bold text-white mb-2">Administración</h3>
+            <p class="text-quantum-text-dim text-sm line-clamp-2 mb-4">
+                Gestiona organizaciones globales con visión estratégica e innovación.
+            </p>
+            <span class="inline-block px-4 py-1.5 bg-quantum-accent text-quantum-dark font-bold rounded-lg text-sm transition-colors hover:bg-quantum-accent-hover">
+                Ver Malla
+            </span>
+        </div>
+    </a>
+    <!-- Ingeniería Empresarial -->
+    <a href="carrera-ing-empresarial.html" class="block h-full rounded-2xl overflow-hidden shadow-xl border border-white/5 hover:border-quantum-accent/50 transition-all duration-300">
+        <div class="relative h-64">
+            <img class="w-full h-full object-cover" src="https://blogs.ucontinental.edu.pe/wp-content/uploads/2022/09/sueldo-de-un-ingeniero-empresarial.jpg" alt="Ing. Empresarial">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        <div class="p-6 bg-quantum-medium">
+            <h3 class="text-2xl font-bold text-white mb-2">Ing. Empresarial</h3>
+            <p class="text-quantum-text-dim text-sm line-clamp-2 mb-4">
+                Integra tecnología, procesos y estrategia para la transformación digital.
+            </p>
+            <span class="inline-block px-4 py-1.5 bg-quantum-accent text-quantum-dark font-bold rounded-lg text-sm transition-colors hover:bg-quantum-accent-hover">
+                Ver Malla
+            </span>
+        </div>
+    </a>
+    <!-- Derecho -->
+    <a href="carrera-derecho.html" class="block h-full rounded-2xl overflow-hidden shadow-xl border border-white/5 hover:border-quantum-accent/50 transition-all duration-300"> 
+        <div class="relative h-64">
+            <img class="w-full h-full object-cover" src="https://blogs.unitec.mx/hubfs/Imported_Blog_Media/todo-lo-que-debes-saber-sobre-estudiar-la-carrera-de-derecho-1.jpg" alt="Derecho">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        <div class="p-6 bg-quantum-medium">
+            <h3 class="text-2xl font-bold text-white mb-2">Derecho</h3>
+            <p class="text-quantum-text-dim text-sm line-clamp-2 mb-4">
+                Abogado corporativo con visión internacional para desafíos legales complejos.
+            </p>
+            <span class="inline-block px-4 py-1.5 bg-quantum-accent text-quantum-dark font-bold rounded-lg text-sm transition-colors hover:bg-quantum-accent-hover">
+                Ver Malla
+            </span>
+        </div>
+    </a>
+</div>
+  <!-- Secciónes de beneficios -->
+  <div class="bg-quantum-dark py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-16 text-white">¿Por qué elegir la Pacífico?</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="card-benefit">
+          <div class="h-48 overflow-hidden rounded-md mb-4">
+            <img src="https://pbs.edu.pe/images/5f4e64b1c82e43d893e9acd7da19af53.jpg" alt="Excelencia Académica" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-quantum-accent">Excelencia Académica</h3>
+          <p class="text-quantum-text-dim">
+            Plana docente de primer nivel y mallas curriculares actualizadas con las exigencias globales.
+          </p>
+        </div>
+
+        <div class="card-benefit">
+          <div class="h-48 overflow-hidden rounded-md mb-4">
+            <img src="https://images.adsttc.com/media/images/55e6/1ff1/4d8d/5d12/8b00/00be/newsletter/5048f5e428ba0d0c62000172_sucursal-de-universidad-del-pac-fico-metropolis__mg_2440-jpg.jpg" alt="Enfoque Global" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-quantum-accent">Enfoque Global</h3>
+          <p class="text-quantum-text-dim">
+            Internacionalización a través de intercambios, dobles grados y programas en inglés.
+          </p>
+        </div>
+
+        <div class="card-benefit">
+          <div class="h-48 overflow-hidden rounded-md mb-4">
+            <img src="https://www.uexternado.edu.co/wp-content/uploads/2019/02/empleabilidad-2019.jpg" alt="Alta Empleabilidad" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+          </div>
+          <h3 class="text-2xl font-bold mb-3 text-quantum-accent">Alta Empleabilidad</h3>
+          <p class="text-quantum-text-dim">
+            Nuestros egresados son los más solicitados por las empresas líderes de la región.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Pie de página -->
+  <footer class="bg-quantum-medium text-white pt-20 pb-10 relative mt-auto">
+    <div class="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-quantum-dark via-quantum-accent to-quantum-dark"></div>
+    
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
+        <!-- Información institucional -->
+        <div class="lg:col-span-2 space-y-6">
+          <div class="flex items-center gap-3">
+            <img src="https://sisisemail.up.edu.pe/sisisemail/_data/2021/2052/UniversidadDelPacifico/UniversidadDelPacifico.jpg" alt="Logo UP" class="h-12 w-auto bg-white p-1 rounded-lg">
+            <div>
+                <h3 class="font-bold text-xl tracking-wide leading-none">Universidad</h3>
+                <h3 class="font-bold text-xl tracking-wide leading-none">del Pacífico</h3>
+            </div>
+          </div>
+          <p class="text-quantum-text-dim text-sm leading-relaxed pr-6">
+            Líderes en educación superior especializada en economía y negocios en el Perú. Formamos profesionales con propósito, ética y visión global desde 1962.
+          </p>
+          <div class="text-quantum-text-dim text-sm">
+             <p class="font-bold text-white mb-1">Campus Central:</p>
+             Jr. Sánchez Cerro 2141, Jesús María, Lima - Perú.
+           </div>
+        </div>
+        <!-- Enlaces de Admisión -->
+        <div>
+          <h3 class="font-bold text-lg mb-6 text-white border-l-4 border-quantum-accent pl-3">Admisión</h3>
+          <ul class="space-y-4 text-sm text-quantum-text-dim">
+            <li><a href="#" class="hover:text-quantum-accent hover:translate-x-1 transition-all inline-block">Carreras de Pregrado</a></li>
+            <li><a href="#" class="hover:text-quantum-accent hover:translate-x-1 transition-all inline-block">Modalidades de Ingreso</a></li>
+            <li><a href="#" class="hover:text-quantum-accent hover:translate-x-1 transition-all inline-block">Pensiones y Becas</a></li>
+          </ul>
+        </div>
+        <!-- Enlaces de Comunidad -->
+        <div>
+          <h3 class="font-bold text-lg mb-6 text-white border-l-4 border-quantum-accent pl-3">Comunidad</h3>
+          <ul class="space-y-4 text-sm text-quantum-text-dim">
+            <li><a href="#" class="hover:text-quantum-accent hover:translate-x-1 transition-all inline-block">Centro de Idiomas</a></li>
+            <li><a href="#" class="hover:text-quantum-accent hover:translate-x-1 transition-all inline-block">Investigación</a></li>
+            <li><a href="#" class="hover:text-quantum-accent hover:translate-x-1 transition-all inline-block">Noticias y Eventos</a></li>
+          </ul>
+        </div>
+        <!-- Enlaces Legales -->
+        <div>
+          <h3 class="font-bold text-lg mb-6 text-white border-l-4 border-quantum-accent pl-3">Legal</h3>
+          <ul class="space-y-4 text-sm text-quantum-text-dim">
+            <li><a href="#" class="hover:text-quantum-accent hover:translate-x-1 transition-all inline-block">Transparencia</a></li>
+            <li><a href="#" class="hover:text-quantum-accent hover:translate-x-1 transition-all inline-block">Libro de Reclamaciones</a></li>
+            <li><a href="#" class="hover:text-quantum-accent hover:translate-x-1 transition-all inline-block">Canal Ético</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Fila copyright y redes sociales -->
+      <div class="border-t border-quantum-dark/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-quantum-text-dim text-xs text-center md:text-left">
+          &copy; 2025 Universidad del Pacífico. Todos los derechos reservados.
+        </div>
+        
+        <div class="flex gap-4">
+          <a href="#" class="p-2 bg-quantum-dark rounded hover:bg-quantum-accent hover:text-quantum-dark transition-colors">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Script para el menú móvil -->
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

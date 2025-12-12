@@ -1,0 +1,21 @@
+{
+  "name": "tu-nombre-de-proyecto",
+  "version": "1.0.0",
+  "description": "Tu descripción del proyecto",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "postinstall": "npm run build" 
+  },
+  "keywords": [
+    "tailwindcss",
+    "github-pages"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "tailwindcss": "^4.1.14"
+  }
+}
